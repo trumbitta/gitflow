@@ -309,12 +309,6 @@ cmd_default() {
 		warn "after your first push of branch: ${develop_branch}"
 		warn "\t\t( git push origin ${develop_branch} )"
         fi
-        else
-                warn "It seems to me you are using git-flow-init for the first time on this git repository."
-                warn "Thus, you may likely find rather useful to run"
-                warn "\n\t\tgit branch --set-upstream ${develop_branch} origin/${develop_branch}\n"
-                warn "after your first push of branch: ${develop_branch}"
-        fi
 
 }
 
